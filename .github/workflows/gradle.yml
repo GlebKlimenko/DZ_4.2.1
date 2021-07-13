@@ -29,3 +29,5 @@ jobs:
       run: java -jar ./artifacts/app-ordir.jar -P:profile=test &
     - name: Build with Gradle
       run: ./gradlew test --info
+    - name: Build with Gradle
+      run: ./gradlew test -Dselenide.headless=true
